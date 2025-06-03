@@ -1,0 +1,25 @@
+# Unity 檔案應該以二進位模式處理
+*.unity binary
+*.prefab binary
+*.asset binary
+*.mat binary
+*.anim binary
+*.controller binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.tga binary
+*.psd binary
+*.fbx binary
+*.FBX binary
+*.wav binary
+*.mp3 binary
+*.ogg binary
+
+# 文字檔案保持文字模式
+*.cs text eol=lf
+*.js text eol=lf
+*.json text eol=lf
+*.txt text eol=lf
+*.md text eol=lf
+*.meta text eol=lf
