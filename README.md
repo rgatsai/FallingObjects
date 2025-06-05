@@ -15,7 +15,7 @@
 
 ### ✨ 主要特色
 
-- 🟢 **多種難度模式** - Eazy、Normal、Difficult 模式選擇
+- 🟢 **多種難度模式** - Eazy、Normal、Hard 模式選擇
 - 🕹️ **直覺操作** - 使用鍵盤左右鍵控制角色移動
 - ⏱️ **成績計算** - 以存活時間作為成績基準
 - 📈 **成績統整** - 結束畫面呈現所有難度的總成績
@@ -24,29 +24,29 @@
 ## 📁 專案結構
 
 ```
-UnityFinalExam-main/
+FallingObjects
 ├── Assets/
 │   ├── Resource/                   # 遊戲使用的資源與 Prefab
 │   │   ├── FallingObjectEazy.prefab
 │   │   ├── FallingObjectNormal.prefab
 │   │   ├── FallingObjectDifficult.prefab
 │   ├── Scenes/                     # 遊戲場景
-│   │   ├── StartScene.unity       # 開始畫面
+│   │   ├── GameMenu.unity       # 開始畫面
 │   │   ├── GameEazy.unity         # 簡單模式場景
 │   │   ├── GameNormal.unity       # 普通模式場景
 │   │   ├── GameDifficult.unity    # 困難模式場景
-│   │   ├── ScoreScene.unity       # 總成績結算場景
+│   │   ├── EndScene.unity       # 總成績結算場景
 │   ├── Scripts/                    # 遊戲控制腳本
-│   │   ├── GameManager.cs         # 控制遊戲流程與倒數
-│   │   ├── PlayerMove.cs          # 玩家控制邏輯
+│   │   ├── GameController.cs         # 控制遊戲流程與倒數
+│   │   ├── PlayerController.cs          # 玩家控制邏輯
 │   │   ├── FallingObject.cs       # 障礙物行為控制
-│   │   ├── SceneChange.cs         # 場景切換控制
-│   │   └── ScoreManager.cs        # 計算與儲存分數
+│   │   ├── SceneSwitch.cs         # 場景切換控制
+│   │   └── ResultManager.cs        # 計算與儲存分數
 ```
 
 ## 🎮 遊戲流程
 
-### 1️⃣ 開始畫面 (`StartScene.unity`)
+### 1️⃣ 開始畫面 (`GameMenu.unity`)
 
 - 顯示開始按鈕與標題
 - 點擊「開始」後輸入玩家姓名
@@ -58,7 +58,7 @@ UnityFinalExam-main/
 - 玩家每模式開始後記錄存活時間
 - 撞到掉落物即結束該模式並選擇再次挑戰或回到選擇難度
 
-### 3️⃣ 總結算畫面 (`ScoreScene.unity`)
+### 3️⃣ 總結算畫面 (`EndScene.unity`)
 
 - 顯示三個難度下的個別最佳分數（存活時間）
 - 可重新開始遊戲或回到主選單
@@ -73,7 +73,7 @@ UnityFinalExam-main/
 | 模式控制       | 控制當前進行的難度與流程     |
 | 結束檢測       | 玩家碰到掉落物後觸發結算邏輯 |
 
-### 📌 玩家控制 (`PlayerMove.cs`)
+### 📌 玩家控制 (`PlayerController.cs`)
 
 - 支援鍵盤輸入（左右方向鍵）
 - 移動邊界限制，防止角色離開畫面
