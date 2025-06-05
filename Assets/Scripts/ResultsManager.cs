@@ -14,7 +14,7 @@ public class ResultsManager : MonoBehaviour
 
     void Start()
     {
-        playerNameText.text = "玩家：" + Global.playerName;
+        playerNameText.text = "PLAYER：" + Global.playerName;
         DisplayTimes();
     }
 
@@ -24,8 +24,8 @@ public class ResultsManager : MonoBehaviour
         //currentTimeText.text = "本次存活時間: " + Global.GetFormattedTime(Global.currentSurvivalTime) + " 秒";
 
         // 顯示各難度最佳記錄
-        easyBestText.text = "簡單難度最佳: " + Global.GetFormattedTime(Global.easyBestTime) + " 秒";
-        normalBestText.text = "普通難度最佳: " + Global.GetFormattedTime(Global.normalBestTime) + " 秒";
-        hardBestText.text = "困難難度最佳: " + Global.GetFormattedTime(Global.hardBestTime) + " 秒";
+        easyBestText.text = "EAZY: " + Global.GetFormattedTime(Global.easyBestTime);
+        normalBestText.text = "MEDIUM: " + Global.GetFormattedTime(Global.normalBestTime);
+        hardBestText.text = "HARD: " + Global.GetFormattedTime(Global.hardBestTime);
     }
 }

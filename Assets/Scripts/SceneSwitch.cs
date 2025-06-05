@@ -43,4 +43,14 @@ public class SceneSwitch : MonoBehaviour
     {
         SceneManager.LoadSceneAsync(6);
     }
+
+    public void goIllustrate()
+    {
+        SceneManager.LoadSceneAsync(7);
+    }
+
+    public void WEB()
+    {
+        Application.OpenURL("https://www.notion.so/Cat-2099b2853b5e80eb8189c809fdf5bc24");
+    }
 }

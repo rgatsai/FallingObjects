@@ -14,10 +14,11 @@ public class InputName : MonoBehaviour
         // 初始時如果輸入框是空的，按鈕不可用
         UpdateButtonState();
 
-        // 監聽輸入變化
+        // 監聽輸入變化，將OnInput註冊為事件處理器，每當nameInputField改變值時就觸發OnInputChanged
         nameInputField.onValueChanged.AddListener(OnInputChanged);
     }
 
+    //每當值改變時就判斷一次
     void OnInputChanged(string input)
     {
         UpdateButtonState();
@@ -25,9 +26,11 @@ public class InputName : MonoBehaviour
 
     void UpdateButtonState()
     {
-        // 只有當輸入不為空且去除空白後有內容時，按鈕才可用
+        // 這句if指的是unity若沒有為button賦值(在inspector)就會報錯
         if (confirmButton != null)
         {
+            // interactable控制按鈕可/不可點擊狀態，IsNullOrEmpty若值為空則返回true
+            // 所以若InputField值為空則不可點擊
             confirmButton.interactable = !string.IsNullOrEmpty(nameInputField.text.Trim());
         }
     }
@@ -43,7 +46,7 @@ public class InputName : MonoBehaviour
             Debug.Log("請輸入名字！");
             return;
         }
-
+        //儲存名字最後結算畫面使用
         Global.playerName = trimmedName;
     }
 
