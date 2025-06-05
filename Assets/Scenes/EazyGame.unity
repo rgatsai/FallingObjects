@@ -569,7 +569,7 @@ GameObject:
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
   - component: {fileID: 519420033}
-  - component: {fileID: 519420034}
+  - component: {fileID: 519420035}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -664,7 +664,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fallingObject: {fileID: 7384116176918419980, guid: 9291393ac99caf74a9f499f117daf898, type: 3}
---- !u!114 &519420034
+--- !u!114 &519420035
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -673,7 +673,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 519420028}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 65aa9b5d1e922234eb7eaae5a194aab7, type: 3}
+  m_Script: {fileID: 11500000, guid: 16096ac6339c43e43a7aa72059333d0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &792695615
@@ -866,9 +866,9 @@ Transform:
   m_Children:
   - {fileID: 1516168852}
   - {fileID: 275271193}
+  - {fileID: 1011795521}
   - {fileID: 894255740}
   - {fileID: 792695616}
-  - {fileID: 1011795521}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: -81.342, y: 0, z: 0}
 --- !u!1 &855800005
@@ -2051,8 +2051,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 519420034}
-        m_TargetAssemblyTypeName: BackChooseDifficult, Assembly-CSharp
+      - m_Target: {fileID: 519420035}
+        m_TargetAssemblyTypeName: SceneSwitch, Assembly-CSharp
         m_MethodName: backChooseDifficult
         m_Mode: 1
         m_Arguments:

@@ -285,7 +285,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1569596461}
-        m_TargetAssemblyTypeName: ChooseDifficalty, Assembly-CSharp
+        m_TargetAssemblyTypeName: SceneSwitch, Assembly-CSharp
         m_MethodName: goEnd
         m_Mode: 1
         m_Arguments:
@@ -497,8 +497,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1569596461}
-        m_TargetAssemblyTypeName: ChooseDifficalty, Assembly-CSharp
-        m_MethodName: chooseDifficult
+        m_TargetAssemblyTypeName: SceneSwitch, Assembly-CSharp
+        m_MethodName: chooseHard
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -867,7 +867,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1569596461}
-        m_TargetAssemblyTypeName: ChooseEasy, Assembly-CSharp
+        m_TargetAssemblyTypeName: SceneSwitch, Assembly-CSharp
         m_MethodName: chooseEasy
         m_Mode: 1
         m_Arguments:
@@ -1087,7 +1087,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1569596457}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 911e0030c14982643827425c2b072338, type: 3}
+  m_Script: {fileID: 11500000, guid: 16096ac6339c43e43a7aa72059333d0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1619154745
@@ -1174,8 +1174,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1569596461}
-        m_TargetAssemblyTypeName: ChooseDifficalty, Assembly-CSharp
-        m_MethodName: chooseMedium
+        m_TargetAssemblyTypeName: SceneSwitch, Assembly-CSharp
+        m_MethodName: chooseNormal
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1307,7 +1307,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1569596461}
-        m_TargetAssemblyTypeName: ChooseDifficalty, Assembly-CSharp
+        m_TargetAssemblyTypeName: SceneSwitch, Assembly-CSharp
         m_MethodName: goMenu
         m_Mode: 1
         m_Arguments:

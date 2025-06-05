@@ -824,7 +824,7 @@ GameObject:
   - component: {fileID: 954871529}
   - component: {fileID: 954871528}
   - component: {fileID: 954871531}
-  - component: {fileID: 954871532}
+  - component: {fileID: 954871533}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -919,7 +919,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fallingObject: {fileID: 7384116176918419980, guid: 2c29323e1d03d684bbc1208cd5416c93, type: 3}
---- !u!114 &954871532
+--- !u!114 &954871533
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -928,7 +928,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 954871526}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 65aa9b5d1e922234eb7eaae5a194aab7, type: 3}
+  m_Script: {fileID: 11500000, guid: 16096ac6339c43e43a7aa72059333d0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1030622614
@@ -1473,8 +1473,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 954871532}
-        m_TargetAssemblyTypeName: BackChooseDifficult, Assembly-CSharp
+      - m_Target: {fileID: 954871533}
+        m_TargetAssemblyTypeName: SceneSwitch, Assembly-CSharp
         m_MethodName: backChooseDifficult
         m_Mode: 1
         m_Arguments:

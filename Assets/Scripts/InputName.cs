@@ -59,8 +59,4 @@ public class InputName : MonoBehaviour
         }
     }
 
-    public void goMenu()
-    {
-        SceneManager.LoadSceneAsync(0);
-    }
 }

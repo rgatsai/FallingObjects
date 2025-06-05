@@ -309,7 +309,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1412997787}
-        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+        m_TargetAssemblyTypeName: SceneSwitch, Assembly-CSharp
         m_MethodName: PlayGame
         m_Mode: 1
         m_Arguments:
@@ -539,7 +539,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1412997783}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1345532f04b95d44fa95eac9933e088d, type: 3}
+  m_Script: {fileID: 11500000, guid: 16096ac6339c43e43a7aa72059333d0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1473956717

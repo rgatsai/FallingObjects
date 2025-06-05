@@ -564,8 +564,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2145173831}
-        m_TargetAssemblyTypeName: InputName, Assembly-CSharp
+      - m_Target: {fileID: 2145173832}
+        m_TargetAssemblyTypeName: SceneSwitch, Assembly-CSharp
         m_MethodName: goMenu
         m_Mode: 1
         m_Arguments:
@@ -1034,6 +1034,7 @@ GameObject:
   - component: {fileID: 2145173829}
   - component: {fileID: 2145173828}
   - component: {fileID: 2145173831}
+  - component: {fileID: 2145173832}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1129,6 +1130,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameInputField: {fileID: 1983730878}
   confirmButton: {fileID: 819160649}
+--- !u!114 &2145173832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2145173827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16096ac6339c43e43a7aa72059333d0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
