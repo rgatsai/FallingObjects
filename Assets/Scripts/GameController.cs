@@ -29,13 +29,10 @@ public class GameController : MonoBehaviour
     {   //當玩家死亡時出現GameOver，並讀取場景加載時間=玩家存活時間
         GameOverCanvas.gameObject.SetActive(true);
         float survivalTime = (float)Math.Round(Time.timeSinceLevelLoad, 2);
-<<<<<<< HEAD
         TimerText.text = "You Lasted:" + survivalTime;
         //將存活時間和難度傳送給全域變數
-=======
         TimerText.text = "Survival " + survivalTime;
 
->>>>>>> e495f924d187a1ca9932db285d4993779afe4291
         Global.RecordSurvivalTime(Global.currentDifficulty, survivalTime);
         //防止死亡後重新執行
         if (playerController != null)
