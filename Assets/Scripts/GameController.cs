@@ -15,10 +15,10 @@ public class GameController : MonoBehaviour
     private void Awake()
     {
         if(playerController != null)
-        {
+        {   //當玩家死亡時，自動調用WhenPlayerDies
             playerController.PlayerDied += WhenPlayerDies;
         }
-
+            //確保遊戲加載時不會顯示GameOver畫面
         if (GameOverCanvas.gameObject.activeSelf)
         {
             GameOverCanvas.gameObject.SetActive(false);
@@ -26,19 +26,20 @@ public class GameController : MonoBehaviour
     }
 
     void WhenPlayerDies()
-    {
+    {   //當玩家死亡時出現GameOver，並讀取場景加載時間=玩家存活時間
         GameOverCanvas.gameObject.SetActive(true);
         float survivalTime = (float)Math.Round(Time.timeSinceLevelLoad, 2);
         TimerText.text = "You Lasted:" + survivalTime;
-
+        //將存活時間和難度傳送給全域變數
         Global.RecordSurvivalTime(Global.currentDifficulty, survivalTime);
-
+        //防止死亡後重新執行
         if (playerController != null)
-        {
+        {   
             playerController.PlayerDied -= WhenPlayerDies;
         }
     }
 
+    //給Retry按鈕使用，重新加載場景
     public void RetryClicked()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
