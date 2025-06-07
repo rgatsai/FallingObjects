@@ -19,7 +19,7 @@ public class ObjectFallController : MonoBehaviour
         if (rb != null)
         {
             rb.gravityScale = fallSpeed;
-            rb.drag = 0;        // 加入這行，設定空氣阻力為0
+            rb.drag = 0;
         }
     }
 }

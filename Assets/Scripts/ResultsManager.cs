@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class ResultsManager : MonoBehaviour
 {
-    [Header("®É¶¡Åã¥ÜText")]
+    [Header("ï¿½É¶ï¿½ï¿½ï¿½ï¿½Text")]
     public Text currentTimeText;
     public Text easyBestText;
     public Text normalBestText;
@@ -14,18 +14,18 @@ public class ResultsManager : MonoBehaviour
 
     void Start()
     {
-        playerNameText.text = "PLAYER¡G" + Global.playerName;
+        playerNameText.text = Global.playerName;
         DisplayTimes();
     }
 
     void DisplayTimes()
     {
-        // Åã¥Ü¥»¦¸¹CÀ¸®É¶¡
-        //currentTimeText.text = "¥»¦¸¦s¬¡®É¶¡: " + Global.GetFormattedTime(Global.currentSurvivalTime) + " ¬í";
+        // ï¿½ï¿½Ü¥ï¿½ï¿½ï¿½ï¿½Cï¿½ï¿½ï¿½É¶ï¿½
+        //currentTimeText.text = "ï¿½ï¿½ï¿½ï¿½ï¿½sï¿½ï¿½ï¿½É¶ï¿½: " + Global.GetFormattedTime(Global.currentSurvivalTime) + " ï¿½ï¿½";
 
-        // Åã¥Ü¦UÃø«×³Ì¨Î°O¿ý
-        easyBestText.text = "EAZY: " + Global.GetFormattedTime(Global.easyBestTime);
-        normalBestText.text = "MEDIUM: " + Global.GetFormattedTime(Global.normalBestTime);
-        hardBestText.text = "HARD: " + Global.GetFormattedTime(Global.hardBestTime);
+        // ï¿½ï¿½Ü¦Uï¿½ï¿½ï¿½×³Ì¨Î°Oï¿½ï¿½
+        easyBestText.text = Global.GetFormattedTime(Global.easyBestTime);
+        normalBestText.text = Global.GetFormattedTime(Global.normalBestTime);
+        hardBestText.text = Global.GetFormattedTime(Global.hardBestTime);
     }
 }

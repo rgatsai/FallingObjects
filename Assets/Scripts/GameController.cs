@@ -29,7 +29,7 @@ public class GameController : MonoBehaviour
     {
         GameOverCanvas.gameObject.SetActive(true);
         float survivalTime = (float)Math.Round(Time.timeSinceLevelLoad, 2);
-        TimerText.text = "You Lasted:" + survivalTime;
+        TimerText.text = "Survival " + survivalTime;
 
         Global.RecordSurvivalTime(Global.currentDifficulty, survivalTime);
 
@@ -47,6 +47,6 @@ public class GameController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }

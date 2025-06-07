@@ -4,18 +4,18 @@ using UnityEngine;
 
 public static class Global
 {
-    // ¤T­ÓÃø«×ªº³Ì¨Î¦s¬¡®É¶¡°O¿ý
+    // ï¿½Tï¿½ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½Ì¨Î¦sï¿½ï¿½ï¿½É¶ï¿½ï¿½Oï¿½ï¿½
     public static float easyBestTime = 0f;
     public static float normalBestTime = 0f;
     public static float hardBestTime = 0f;
 
-    // ·í«e¹CÀ¸ªº¦s¬¡®É¶¡
+    // ï¿½ï¿½ï¿½eï¿½Cï¿½ï¿½ï¿½ï¿½ï¿½sï¿½ï¿½ï¿½É¶ï¿½
     public static float currentSurvivalTime = 0f;
 
-    // ·í«e¿ï¾ÜªºÃø«×
+    // ï¿½ï¿½ï¿½eï¿½ï¿½Üªï¿½ï¿½ï¿½ï¿½ï¿½
     public static Difficulty currentDifficulty = Difficulty.Easy;
 
-    // Ãø«×µ¥¯Å
+    // ï¿½ï¿½ï¿½×µï¿½ï¿½ï¿½
     public enum Difficulty
     {
         Easy,
@@ -23,7 +23,7 @@ public static class Global
         Hard
     }
 
-    // ¦s¬¡®É¶¡¬ÛÃö¤èªk
+    // ï¿½sï¿½ï¿½ï¿½É¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½k
     public static void RecordSurvivalTime(Difficulty difficulty, float survivalTime)
     {
         currentSurvivalTime = survivalTime;
@@ -34,21 +34,21 @@ public static class Global
                 if (survivalTime > easyBestTime)
                 {
                     easyBestTime = survivalTime;
-                    Debug.Log($"·sªºÂ²³æÃø«×³Ì¨Î°O¿ý: {easyBestTime:F2} ¬í");
+                    Debug.Log($"ï¿½sï¿½ï¿½Â²ï¿½ï¿½ï¿½ï¿½ï¿½×³Ì¨Î°Oï¿½ï¿½: {easyBestTime:F2} ï¿½ï¿½");
                 }
                 break;
             case Difficulty.Normal:
                 if (survivalTime > normalBestTime)
                 {
                     normalBestTime = survivalTime;
-                    Debug.Log($"·sªº´¶³qÃø«×³Ì¨Î°O¿ý: {normalBestTime:F2} ¬í");
+                    Debug.Log($"ï¿½sï¿½ï¿½ï¿½ï¿½ï¿½qï¿½ï¿½ï¿½×³Ì¨Î°Oï¿½ï¿½: {normalBestTime:F2} ï¿½ï¿½");
                 }
                 break;
             case Difficulty.Hard:
                 if (survivalTime > hardBestTime)
                 {
                     hardBestTime = survivalTime;
-                    Debug.Log($"·sªº§xÃøÃø«×³Ì¨Î°O¿ý: {hardBestTime:F2} ¬í");
+                    Debug.Log($"ï¿½sï¿½ï¿½ï¿½xï¿½ï¿½ï¿½ï¿½ï¿½×³Ì¨Î°Oï¿½ï¿½: {hardBestTime:F2} ï¿½ï¿½");
                 }
                 break;
         }
